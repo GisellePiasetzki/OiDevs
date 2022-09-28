@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #06283D;
+
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+      -webkit-filter: brightness(100%);
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+      -webkit-filter: brightness(200%);
+    }
+  }
+  
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      
+    }
+    100% {
+      transform: scale(1.1);
+      
+    }
+}
+
+
+.via-lactea{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    gap: 45px;
+    min-width: 1040px;
+}
+
+.sol{
+    border-radius: 50%;
+    background-color:#E8AA42 ;
+    width: 250px;
+    height: 250px;
+    animation: pulse 0.7s infinite;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    box-shadow: 0 0 15px 15px #815d1d;
+    filter: blur(1px);
+}
+
+
+
+
+.mercurio{
+    border-radius: 50%;
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    box-shadow: inset -3px -3px #4e4949;
+
+    
+}
+.mercurio .bolinhas{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #4e4949;
+    opacity: 0.4;
+
+}
+
+.venus{
+    border-radius: 50%;
+    background-color: orangered;
+    background-image: linear-gradient(20deg, #edeb91 0, #f0e18c 8.33%, #eed487 16.67%, #e8c581 25%, #deb57c 33.33%, #cfa376 41.67%, #bb906f 50%, #a67e67 58.33%, #937061 66.67%, #82645b 75%, #735a55 83.33%, #675351 91.67%, #5e4d4d 100%);
+    width: 80px;
+    height: 80px;
+    
+}
+
+.terra{
+    border-radius: 50%;
+    background-color: #205375;
+    width: 75px;
+    height: 75px;
+    box-shadow: inset -3px -3px #103249;
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+}
+
+.terra .terra-verde{
+    width: 12px;
+    height: 24px;
+    border-radius: 45%;
+    background-color: #528b52;
+}
+
+.marte{
+    border-radius: 50%;
+    background-color: #a74242;
+    width: 60px;
+    height: 60px;
+    box-shadow: inset -3px -3px #8f2525;   
+}
+
+.jupiter{
+    border-radius: 50%;
+    background-color: orange;
+    background-image: linear-gradient(185deg, #d1b033 0, #d8a629 10%, #dd9a21 20%, #e28e1b 30%, #e57f17 40%, #e86f17 50%, #ea5d1b 60%, #ec4922 70%, #ed322b 80%, #ed0635 90%, #ed0040 100%);
+    width: 110px;
+    height: 110px;
+}
+.saturno {
+    border-radius: 50%;
+    background-color: rgb(163, 122, 46);
+    width: 90px;
+    height: 90px;
+    box-shadow: inset -3px -3px #9c6704;
+}
+
+.urano {
+    border-radius: 50%;
+    background-color: #72b3c9;
+    width: 70px;
+    height: 70px;
+    box-shadow: inset -3px -3px #4d91a8;
+   
+}
+.netuno{
+    border-radius: 50%;
+    background-color: #1c1c99;
+    width: 65px;
+    height: 65px;
+    box-shadow: inset -3px -3px #3c3cc7;
+}
+.plutao{
+    border-radius: 50%;
+    background-color: rgb(110, 16, 16);
+    width: 20px;
+    height: 20px;
+}
+
